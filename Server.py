@@ -36,7 +36,7 @@ def use_client(client_socket, cipher): #istemciyle haberleşmek için
                 
                 
             else:
-                 # Nonce, şifreli veri ve tag'i ayır
+                 # Nonce, şifreli veri ve tag'i ayırır
                 nonce = incoming_data[:16]
                 tag = incoming_data[-16:]
                 encrypted_data = incoming_data[16:-16]
